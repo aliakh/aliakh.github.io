@@ -1,0 +1,4 @@
+---
+slug: parallelism
+name: parallelism
+---

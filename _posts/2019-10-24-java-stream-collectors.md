@@ -2,9 +2,9 @@
 layout: post
 title:  "Java Stream collectors"
 description: An article with source code how to reduce Java Streams with Collectors
-keywords: Java, streams, collectors, collections
-<!-- categories: Java -->
-<!-- tags: streams collectors collections -->
+keywords: Java, stream, collector, collection
+categories: [java]
+tags: [stream, collector, collection]
 ---
 
 ## Introduction

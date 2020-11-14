@@ -1,21 +1,25 @@
-{% if include.categories != empty %} •
-  {% for category in include.categories %}
-    {% assign no_comma = forloop.last %}
-    {% for archive in site.archives %}
-      {% if archive.type == "category" and archive.title == category %}
-        <a href="{{ archive.url | relative_url }}">{{ archive.title | escape }}</a>{% unless no_comma %},{% endunless %}
-      {% endif %}
-    {% endfor %}
+{% if include.categories.size > 0 %} •
+  {% capture categories_content %} {% endcapture %}
+  {% for post_category in include.categories %}
+    {% assign category = site.my_categories | where: "slug", post_category %}
+    {% if category %}
+      {% assign category = category[0] %}
+      {% capture categories_content_temp %}{{ categories_content }}<a href="{{ category.url }}">{{ category.name }}</a>{% if forloop.last == false %}, {% endif %}{% endcapture %}
+      {% assign categories_content = categories_content_temp %}
+    {% endif %}
   {% endfor %}
+  {{ categories_content }}
 {% endif %}
 
-{% if include.tags != empty %} •
-  {% for tag in include.tags %}
-    {% assign no_comma = forloop.last %}
-    {% for archive in site.archives %}
-      {% if archive.type == "tag" and archive.title == tag %}
-        <a href="{{ archive.url | relative_url }}">{{ archive.title | escape }}</a>{% unless no_comma %},{% endunless %}
-      {% endif %}
-    {% endfor %}
+{% if include.tags.size > 0 %} •
+  {% capture tags_content %} {% endcapture %}
+  {% for post_tag in include.tags %}
+    {% assign tag = site.my_tags | where: "slug", post_tag %}
+    {% if tag %}
+      {% assign tag = tag[0] %}
+      {% capture tags_content_temp %}{{ tags_content }}<a href="{{ tag.url }}">{{ tag.name }}</a>{% if forloop.last == false %}, {% endif %}{% endcapture %}
+      {% assign tags_content = tags_content_temp %}
+    {% endif %}
   {% endfor %}
+  {{ tags_content }}
 {% endif %}

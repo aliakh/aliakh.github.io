@@ -3,8 +3,8 @@ layout: post
 title:  "Java concurrency and parallelism: executors and thread pools"
 description: An article with source code how use Java executors and thread pools (Executor, ExecutorService, ScheduledExecutorService, CompletionService, ThreadPoolExecutor, ThreadFactory, ScheduledThreadPoolExecutor, ExecutorCompletionService, ForkJoinPool) 
 keywords: Java, concurrency, parallelism, executors, thread pools, Executor, ExecutorService, ScheduledExecutorService, CompletionService, ThreadPoolExecutor, ThreadFactory, ScheduledThreadPoolExecutor, ExecutorCompletionService, ForkJoinPool      
-<!-- categories: Java -->
-<!-- tags: concurrency parallelism executors thread_pools -->
+categories: [java]
+tags: [concurrency, parallelism, executor, thread-pool]
 ---
 
 ## Introduction

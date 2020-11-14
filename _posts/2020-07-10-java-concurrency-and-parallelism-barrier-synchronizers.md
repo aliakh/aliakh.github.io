@@ -3,8 +3,8 @@ layout: post
 title:  "Java concurrency and parallelism: barrier synchronizers (CountDownLatch, CyclicBarrier, Phaser)"
 description: An article with source code how use Java barrier synchronizers (CountDownLatch, CyclicBarrier, Phaser) 
 keywords: Java, concurrency, parallelism, synchronizers, barriers, CountDownLatch, CyclicBarrier, Phaser
-<!-- categories: Java -->
-<!-- tags: concurrency parallelism synchronizers -->
+categories: [java]
+tags: [concurrency, parallelism, synchronizer]
 ---
 
 ## Introduction

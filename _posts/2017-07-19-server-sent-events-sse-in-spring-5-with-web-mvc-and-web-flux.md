@@ -3,8 +3,8 @@ layout: post
 title:  "Server-Sent Events (SSE) in Spring 5 with Web MVC and Web Flux"
 description: An article with source code how to use Server-Sent Events (SSE) in Spring 5 with Web MVC and Web Flux
 keywords: Server-Sent Events, SSE, Spring 5, Web MVC, Web Flux
-<!-- categories: Java Web Spring -->
-<!-- tags: server_sent_events spring web_mvc web_flux -->
+categories: [java, web, spring]
+tags: [server-sent-events, http, web-mvc, web-flux]
 ---
 
 ## Introduction
