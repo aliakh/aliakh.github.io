@@ -2,9 +2,9 @@
 layout: post
 title:  "Java sockets I/O: blocking, non-blocking and asynchronous"
 description: An article with source code how to perform Java sockets I/O (blocking, non-blocking, multiplexing, asynchronous)
-keywords: Java, I/O, sockets, blocking, non-blocking, multiplexing, asynchronous
-<!-- categories: Java Web -->
-<!-- tags: sockets blocking non-blocking multiplexing signal-driven asynchronous -->
+keywords: Java, I/O, socket, blocking, non-blocking, multiplexing, asynchronous
+categories: [java, web]
+tags: [socket, blocking, non-blocking, multiplexing, asynchronous]
 ---
 
 ## Introduction
