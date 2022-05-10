@@ -32,6 +32,11 @@ table {
   text-align: left;
 }
 
+table, tr, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
 /**
  * Set `margin-bottom` to maintain vertical rhythm
  */
